@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/search}" method="get">
+    <p>NameClient: <input type="text" th:field="*{nameClient}" /></p>
+    <p>gender: <input type="text" th:field="*{gender}" /></p>
+    <p>age: <input type="text" th:field="*{age}" /></p>
+    <p>nameProduct: <input type="text" th:field="*{nameProduct}" /></p>
+    <p>quaProduct: <input type="text" th:field="*{guaProduct}" /></p>
+    <p>priceProduct: <input type="text" th:field="*{priceProduct}" /></p>
+    <p>sumOrder: <input type="text" th:field="*{sumOrder}" /></p>
+    <p>dateOrder: <input type="text" th:field="*{dateOrd}" /></p>
+    <p><input type="submit" value="Searching"></p>
+</form>
+</body>
+</html>
