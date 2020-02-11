@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
     public class SearchController {
         @GetMapping("/search")
         public String searchingForm(Model model) {
-            //model.addAttribute("greeting", new Greeting());
             model.addAttribute("searchModel", new SearchModel());
             return "searchModel";
         }
