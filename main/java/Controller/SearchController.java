@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
         @GetMapping("/search")
         public String searchingForm(Model model) {
             //model.addAttribute("greeting", new Greeting());
-            model.addAttribute("search", new SearchModel());
-            return "search";
+            model.addAttribute("searchModel", new SearchModel());
+            return "searchModel";
         }
         /*@PostMapping("/gresearch")
         public String gettingInfo(@ModelAttribute SearchModel searchModel) {
