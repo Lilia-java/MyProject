@@ -1,7 +1,7 @@
-package Service;
+package ShopProject.Service;
 
-import Model.Order;
-import Repository.OrderRepository;
+import ShopProject.Model.Order;
+import ShopProject.Repository.OrderRepository;
 import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

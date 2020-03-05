@@ -14,7 +14,7 @@ public class ProductService {
     @Autowired
     private ProductRepository ProductRepository;
 
-
+/*
     public List<Product> findAll(){
         return ProductRepository.findAll();
     }
@@ -23,20 +23,20 @@ public class ProductService {
         Optional<Product> optional = ProductRepository.findById(id);
         return optional.orElse(new Product());
     }
-
+*/
     public List<Product> findByName(String name){
         return ProductRepository.findByName(name);
     }
 
-    public void save(Product Product){
+   /* public void save(Product Product){
         ProductRepository.save(Product);
     }
-
+*/
     public List<Product> retrieveByName(String name){
         return ProductRepository.retrieveByName(name);
     }
 
-    public List<Product> findByPrice(int price){
+  /*  public List<Product> findByPrice(int price){
         //price = 20000;
         return ProductRepository.findByPrice(price);
     }
@@ -44,11 +44,11 @@ public class ProductService {
     public List<Product> findByQuentity(int quentity){
         //quentity = 10;
         return ProductRepository.findByQuentity(quentity);
-    }
+    }*/
 
-    public List<Product> findAllProducts(){
+   /* public List<Product> findAllProducts(){
         return ProductRepository.findAllProducts();
-    }
+    }:*/
 
 }
 

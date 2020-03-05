@@ -1,6 +1,4 @@
 package ShopProject.Model;
-import ShopProject.Model.Client;
-import ShopProject.Model.Product;
 
 public class Order {
     private int id;
