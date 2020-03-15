@@ -7,8 +7,8 @@
 <body>
 <h1>Form</h1>
 <form action="#" th:action="@{/ordersearch}" th:object="${ordersearch}" method="post">
-    <p>sumOrder: <input type="text" th:field="*{sum}" /></p>
-    <p>dateOrder: <input type="text" th:field="*{dateOrd}" /></p>
+    <p>sumOrder: <input type="search" th:field="*{sum}" /></p>
+    <p>dateOrder: <input type="search" th:field="*{dateOrd}" /></p>
     <p><input type="submit" value="Searching"></p>
 </form>
 </body>
