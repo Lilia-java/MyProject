@@ -1,12 +1,18 @@
 package appl.model;
-//import javax.persistence.Entity;
 
-//@Entity
+import javax.persistence.*;
+
+@Entity
+@Table(name = "clients")
 public class Client {
 
+    @Column
     private int id;
+    @Column
     private String name;
+    @Column
     private String gender;
+    @Column
     private String dateBirth;
 
     public Client(int id, String name, String gender, String dateBirth) {
@@ -15,6 +21,9 @@ public class Client {
         this.gender = gender;
         this.dateBirth = dateBirth;
     }
+
+
+
     public Client() {
     }
 
@@ -48,5 +57,15 @@ public class Client {
 
     public void setDateBirth(String dateBirth) {
         this.dateBirth = dateBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", dateBirth='" + dateBirth + '\'' +
+                '}';
     }
 }
